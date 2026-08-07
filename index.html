@@ -1,171 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shivam Media — Creative Production Agency">
-  <title>Shivam Media | Creative Production Agency</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<header class="site-header">
-  <a class="brand" href="#home">SHIVAM<span>MEDIA</span></a>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#work">Work</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+<meta name="description" content="Shivam Media — Creative production agency for video editing, AI production, thumbnails, sound design and storytelling.">
 
-<main id="home">
+<title>Shivam Media — Creative Production Agency</title>
 
-  <section class="hero section">
-    <div class="eyebrow">CREATIVE PRODUCTION AGENCY</div>
-    <h1>We turn ideas<br>into <span>content that<br>connects.</span></h1>
-    <p>Shivam Media helps creators and brands create powerful videos, AI productions, thumbnails, sound and scripts that are built to stand out.</p>
-    <div class="actions">
-      <a class="btn btn-light" href="#work">View Our Work <b>↗</b></a>
-      <a class="btn btn-outline" href="#services">Our Services</a>
-    </div>
-  </section>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-  <section class="showcase section">
-    <div class="showcase-stack">
-      <div class="floating-card card-a"><small>VIDEO</small><strong>EDITING</strong></div>
-      <div class="floating-card card-b"><small>AI</small><strong>PRODUCTION</strong></div>
-      <div class="floating-card card-c"><small>CREATIVE</small><strong>STORYTELLING</strong></div>
-    </div>
-    <div class="service-strip">
-      VIDEO EDITING&nbsp;&nbsp;&nbsp; AI PRODUCTION&nbsp;&nbsp;&nbsp;
-      THUMBNAIL DESIGN&nbsp;&nbsp;&nbsp; SOUND DESIGN&nbsp;&nbsp;&nbsp; SCRIPT WRITING
-    </div>
-  </section>
+html{
+  scroll-behavior:smooth;
+}
 
-  <section id="work" class="work section">
-    <div class="eyebrow">SELECTED WORK</div>
-    <h2>Work that speaks<br><span>for itself.</span></h2>
-    <p class="intro">A selection of our creative work. Click any project to watch it or open the project.</p>
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#080808;
+  color:#f5f5f5;
+  line-height:1.5;
+}
 
-    <div class="work-grid">
+a{
+  color:inherit;
+  text-decoration:none;
+}
 
-      <a class="project video-project" href="https://drive.google.com/file/d/1HVSnEyl9XbXeCVlt8ZLdtmXZJvZRbTBA/preview" data-title="Shivam Media Project">
-        <div class="project-thumb"
-             style="background-image:url('assets/thumbnail-design.jpg')">
-          <div class="shade"></div><span class="number">01</span><span class="play">▶</span>
-          <strong>THUMBNAIL<br>DESIGN</strong>
-        </div>
-        <div class="project-info"><h3>Thumbnail Design Project</h3><span>Thumbnail Design</span><b>↗</b></div>
-      </a>
+.container{
+  width:min(1180px,92%);
+  margin:auto;
+}
 
-      <a class="project video-project" href="https://drive.google.com/file/d/1tv4GuhyAQPwN1gZ7YHWvUb2Taq3Xlhs0/preview" data-title="Shivam Media Project">
-        <div class="project-thumb"
-             style="background-image:url('assets/ai-production.jpg')">
-          <div class="shade"></div><span class="number">02</span><span class="play">▶</span>
-          <strong>AI<br>PRODUCTION</strong>
-        </div>
-        <div class="project-info"><h3>AI Production Project</h3><span>AI Production</span><b>↗</b></div>
-      </a>
+/* NAVBAR */
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+  background:rgba(8,8,8,.88);
+  backdrop-filter:blur(15px);
+  border-bottom:1px solid #222;
+}
 
-      <a class="project video-project" href="https://drive.google.com/file/d/1o5oZ-SCc_ifsNCZNUCqp7Ifa_xqVDWSe/preview" data-title="Shivam Media Project">
-        <div class="project-thumb"
-             style="background-image:url('assets/video-editing.jpg')">
-          <div class="shade"></div><span class="number">03</span><span class="play">▶</span>
-          <strong>VIDEO<br>EDITING</strong>
-        </div>
-        <div class="project-info"><h3>Video Editing Project</h3><span>Video Editing</span><b>↗</b></div>
-      </a>
+.nav{
+  height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
 
-      <a class="project video-project" href="https://drive.google.com/file/d/1Px89DcY_7ut0m2otwYlf2SI1ZfXwjkZ6/preview" data-title="Shivam Media Project">
-        <div class="project-thumb"
-             style="background-image:url('assets/sound-design.jpg')">
-          <div class="shade"></div><span class="number">04</span><span class="play">▶</span>
-          <strong>SOUND<br>DESIGN</strong>
-        </div>
-        <div class="project-info"><h3>Sound Design Project</h3><span>Sound Design</span><b>↗</b></div>
-      </a>
+.logo{
+  font-size:22px;
+  font-weight:900;
+  letter-spacing:-1px;
+}
 
-      <a class="project" target="_blank" rel="noopener"
-         href="https://docs.google.com/document/d/16iozZ3Tt2eUM0SsK3UtwguZ_n88Mn7QZFxanjKIeN20/edit?usp=drivesdk">
-        <div class="project-thumb script-thumb" style="background-image:url('assets/script-writing.jpg')">
-          <div class="shade"></div><span class="number">05</span><span class="play">↗</span>
-          <strong>SCRIPT<br>WRITING</strong>
-        </div>
-        <div class="project-info"><h3>Script Writing Project</h3><span>Script Writing</span><b>↗</b></div>
-      </a>
+.logo span{
+  color:#999;
+}
 
-    </div>
-  </section>
+.nav-links{
+  display:flex;
+  gap:30px;
+  align-items:center;
+}
 
-  <section id="services" class="services section">
-    <div class="eyebrow">WHAT WE DO</div>
-    <h2>Everything your content <span>needs.</span></h2>
-    <p class="intro">From the first idea to the final frame, we handle the creative process.</p>
+.nav-links a{
+  font-size:14px;
+  color:#aaa;
+  transition:.3s;
+}
 
-    <div class="service-list">
-      <article><small>01</small><i>▣</i><h3>Thumbnail Design</h3><p>High-impact thumbnails designed to grab attention and increase clicks.</p></article>
-      <article><small>02</small><i>✦</i><h3>AI Production</h3><p>AI-powered visuals and production built around your creative vision.</p></article>
-      <article><small>03</small><i>▶</i><h3>Video Editing</h3><p>Engaging edits, pacing, transitions, motion and storytelling.</p></article>
-      <article><small>04</small><i>♫</i><h3>Sound Design</h3><p>Sound effects, music and audio treatment that make videos feel alive.</p></article>
-      <article><small>05</small><i>Aa</i><h3>Script Writing</h3><p>Strong hooks, storytelling and scripts designed to keep audiences watching.</p></article>
-    </div>
-  </section>
+.nav-links a:hover{
+  color:#fff;
+}
 
-  <section class="about section">
-    <div class="about-mark">SM</div>
-    <div class="eyebrow">ABOUT SHIVAM MEDIA</div>
-    <h2>Creative work isn't<br>just about looking good. <span>It should make people feel something.</span></h2>
-    <p>Shivam Media is a creative production agency focused on helping creators and brands turn ideas into engaging digital content.</p>
-    <p>We combine editing, AI production, design, sound and storytelling to create content that is clear, engaging and built for today's audience.</p>
-  </section>
+.nav-btn{
+  border:1px solid #444;
+  padding:11px 18px;
+  border-radius:30px;
+  color:#fff !important;
+}
 
-  <section id="contact" class="contact section">
-    <div class="eyebrow">HAVE A PROJECT?</div>
-    <h2>Let's create<br>something <span>worth<br>watching.</span></h2>
-    <p>Have a project in mind? Let's talk about it.</p>
-    <a class="btn btn-light" target="_blank" rel="noopener" href="https://wa.me/918094109269?text=Hi%20Shivam%20Media%2C%20I%27m%20interested%20in%20working%20with%20you.%20I%27d%20like%20to%20discuss%20a%20project.">Start a Project <b>↗</b></a>
-  </section>
+.menu{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+}
 
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding-top:110px;
+  position:relative;
+  overflow:hidden;
+}
 
-<section class="contact-details section">
-  <div class="eyebrow">CONNECT WITH US</div>
-  <h2>Let's talk about<br><span>your next project.</span></h2>
-  <div class="contact-links">
-    <a class="contact-link" href="mailto:mediashvm@gmail.com">
-      <small>EMAIL</small>
-      <strong>mediashvm@gmail.com</strong>
-      <b>↗</b>
-    </a>
-    <a class="contact-link" target="_blank" rel="noopener"
-       href="https://wa.me/918094109269?text=Hi%20Shivam%20Media%2C%20I%27m%20interested%20in%20working%20with%20you.%20I%27d%20like%20to%20discuss%20a%20project.">
-      <small>WHATSAPP</small>
-      <strong>+91 80941 09269</strong>
-      <b>↗</b>
-    </a>
-  </div>
-</section>
+.hero:before{
+  content:"";
+  position:absolute;
+  width:500px;
+  height:500px;
+  background:#222;
+  filter:blur(120px);
+  border-radius:50%;
+  right:-180px;
+  top:150px;
+  opacity:.35;
+}
 
-</main>
+.eyebrow{
+  color:#999;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:12px;
+  margin-bottom:25px;
+}
 
-<footer>
-  <a class="brand" href="#home">SHIVAM<span>MEDIA</span></a>
-  <p>Creative Production Agency</p>
-  <div class="footer-nav"><a href="#home">Home</a><a href="#work">Work</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
-  <small>© 2026 Shivam Media. All rights reserved.</small>
-</footer>
+.hero h1{
+  font-size:clamp(50px,8vw,105px);
+  line-height:.92;
+  letter-spacing:-6px;
+  max-width:950px;
+  margin-bottom:35px;
+}
 
+.hero h1 span{
+  color:#777;
+}
 
-<div class="video-modal" id="videoModal" aria-hidden="true">
-  <div class="video-backdrop" data-close-video></div>
-  <div class="video-box" role="dialog" aria-modal="true" aria-label="Portfolio video">
-    <button class="video-close" id="videoClose" aria-label="Close video">×</button>
-    <div class="video-frame-wrap">
-      <iframe id="videoFrame" src="" title="Shivam Media portfolio video" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
+.hero-text{
+  max-width:600px;
+  color:#999;
+  font-size:18px;
+  line-height:1.7;
+  margin-bottom:40px;
+}
 
-<script src="js/script.js"></script>
-</body>
-</html>
+.buttons{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  padding:15px 24px;
+  border-radius:5px;
+  background:#fff;
+  color:#000;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+.btn-outline{
+  background:transparent;
+  color:#fff;
+  border:1px solid #444;
+}
+
+/* MARQUEE */
+.marquee{
+  border-top:1px solid #222;
+  border-bottom:1px solid #222;
+  padding:18px 0;
+  overflow:hidden;
+  color:#777;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:12px;
+}
+
+.marquee-track{
+  white-space:nowrap;
+  animation:move 22s linear infinite;
+}
+
+.marquee-track span{
+  margin-right:50px;
+}
+
+@keyframes move{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+
+/* SECTION */
+section{
+  padding:120px 0;
+}
+
+.section-top{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  margin-bottom:60px;
+}
+
+.section-number{
+  color:#555;
+  font-size:13px;
+}
+
+.section-title{
+  font-size:clamp(40px,6vw,75px);
+  letter-spacing:-4px;
+  line-height:.95;
+  max-width:700px;
+}
+
+.section-desc{
+  color:#777;
+  max-width:400px;
+  line-height:1.7;
+}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  border-top:1px solid #292929;
+}
+
+.service{
+  padding:40px 20px;
+  border-bottom:1px solid #292929;
+  transition:.3s;
+}
+
+.service:nth-child(odd){
+  border-right:1px solid #292929;
+}
+
+.service:hover{
+  background:#111;
+}
+
+.service-num{
+  color:#555;
+  font-size:12px;
+  margin-bottom:45px;
+}
+
+.service h3{
+  font-size:30px;
+  margin-bottom:15px;
+}
+
+.service p{
+  color:#777;
+  max-width:430px;
+}
+
+/* WORK */
+.work-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.project{
+  min-height:360px;
+  border:1px solid #292929;
+  background:#101010;
+ 
